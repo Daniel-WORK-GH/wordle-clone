@@ -16,7 +16,7 @@ class rndword:
         Returns: int: id (line) of word in file
         """
         while True:
-            word_id = random.randint(0, self.word_count[word_len]) - 1
+            word_id = random.randint(1, self.word_count[word_len]) - 1
             if not (word_id in self.used_words[word_len]):
                 self.used_words[word_len].append(word_id)
                 return word_id
